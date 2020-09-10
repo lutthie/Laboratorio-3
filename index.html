@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <title>Introducción a JavaScript</title>
+    </head>
+    <body>
+        <h1>Tema 1: Alerta</h1>
+        <script>
+            alert("Tema 1 JavaScript");
+        </script>
+        
+        <h1>Tema 2: Variables</h1>
+        <script>
+            var nombre;
+            nombre = prompt("Ingresa tu nombre: ", "Valor");
+            document.write("Su nombre es: " + nombre); 
+        </script>
+        <br/>
+        <script>
+            edad = prompt("Ingrese su edad: ", "");
+            document.write("Su edad es: " + edad);
+        </script>
+        
+        <h1>Tema 3: Tipos de Datos</h1>
+        <p>Datos numéricos</p>
+        <script>
+            //Numérico 
+            var num = 19 + 25;
+            document.write("19 + 25 = " + num);
+        </script>
+        <br/>
+        <p>Cadenas de texto</p>
+        <script>
+            //Cadenas de texto
+            var nombre = "Luisa";
+            var apellido = "González";
+            document.write(nombre + " " + apellido);
+        </script>
+        <br/>
+        <p>Arreglos</p>
+        <script>
+            //Arreglos
+            var amigos = ["Jorge", "Luisa", "José"];
+            document.write("Arreglo en la posición 2: " + amigos[2]);
+        </script>
+        <br/>
+        <script>
+            document.write("\nArreglo en la posición 0: " + amigos[0]);
+        </script>
+        <br/>
+        <p>Objetos</p>
+        <p id = "demo"></p>
+        <script>
+            //Objetos
+            var persona = {
+                name: "Luisa",
+                lastname: "González",
+                age: 22
+            };
+            
+            document.getElementById("demo").innerHTML = persona.name + " " + persona.lastname;
+        </script>
+        <br/>
+        <p>Variables boleanas</p>
+        <script>
+            var bool = false;
+            document.write("Valor: " + bool);
+        </script>
+        <br/>
+        <p>NaN</p>
+        <script>
+            var texto = "Hola soy un texto NaN";
+            document.write(texto * 2);
+        </script>
+    </body>
+</html>
